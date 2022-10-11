@@ -220,7 +220,7 @@ def changed_message(
         else:
             message += (
                 f"{'libraries upgrade, ' if libraries_miss else ''}changed files: {changed_files_msg}, "
-                f"skipping collection of {len(stable_files)} files, "
+                f"skipping collection of {len(stable_files)} files: {stable_files}, "
             )
     if config.testmon_data.environment:
         message += f"environment: {environment}"
